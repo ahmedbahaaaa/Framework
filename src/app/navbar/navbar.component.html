@@ -1,0 +1,66 @@
+<nav [class.scrolled]="isScrolled" class="navbar navbar-expand-lg">
+  <div class="container">
+    <a
+      class="navbar-brand text-white text-uppercase fw-bolder fs-2"
+      routerLink="home"
+      >Start Framework</a
+    >
+    <button
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      class="navbar-toggler"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+      <ul class="navbar-list navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="navbar-item me-3">
+          <a
+            class="nav-link text-white text-uppercase fw-bold mt-3 mt-md-0 px-2"
+            routerLink="about"
+            routerLinkActive="bg-danger rounded"
+            >about</a
+          >
+        </li>
+        <li class="navbar-item me-3">
+          <a
+            class="nav-link text-white text-uppercase fw-bold mt-3 mt-md-0 px-2"
+            routerLink="portfolio"
+            routerLinkActive="bg-danger rounded"
+            >portfolio</a
+          >
+        </li>
+        <li class="navbar-item me-3">
+          <a
+            class="nav-link text-white text-uppercase fw-bold mt-3 mt-md-0 px-2"
+            routerLink="contact"
+            routerLinkActive="bg-danger rounded"
+            >contact</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- 
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <ul class="navbar-list">
+    <li class="navbar-item">
+      <a href="#section1" (click)="scrollToSection('section1')">Section 1</a>
+    </li>
+    <li class="navbar-item">
+      <a href="#section2" (click)="scrollToSection('section2')">Section 2</a>
+    </li>
+    <li class="navbar-item">
+      <a href="#section3" (click)="scrollToSection('section3')">Section 3</a>
+    </li>
+    <li class="navbar-item">
+      <a href="#section4" (click)="scrollToSection('section4')">Section 4</a>
+    </li>
+  </ul>
+</nav> -->

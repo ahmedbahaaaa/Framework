@@ -1,0 +1,82 @@
+<div class="protfoilo">
+  <div class="pt-4">
+    <div class="text-center pt-4 cont-text">
+      <h2 class="text-uppercase mb-3 fs-1 fw-bolder">portfolio component</h2>
+      <div class="d-flex align-items-center justify-content-center mb-3">
+        <div class="line me-3"></div>
+        <i class="fa-solid fa-star"></i>
+        <div class="line ms-3"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row g-5">
+        @for (project of projects; track $index) {
+        <div class="col-md-4" data-bs-toggle="modal" data-bs-target="#modalId">
+          <div class="card" (click)="sayImage(project)">
+            <img
+              [src]="project.image"
+              class="card-img-top"
+              alt="{{ project.title }}"
+            />
+
+            <div
+              class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center"
+            >
+              <i class="text-white fa-solid fa-plus fa-6x"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-bs-toggle="modal" data-bs-target="#modalId">
+          <div class="card" (click)="sayImage(project)">
+            <img
+              [src]="project.image"
+              class="card-img-top"
+              alt="{{ project.title }}"
+            />
+            <div
+              class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center"
+            >
+              <i class="text-white fa-solid fa-plus fa-6x"></i>
+            </div>
+          </div>
+        </div>
+        }
+      </div>
+      <!-- <div
+      class="model position-fixed start-0 w-100 top-0 h-100 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center d-no">
+      <img alt=""  class="w-100" src="/public/images/poert1.png" />
+    </div> -->
+
+    </div>
+
+    <!-- Modal -->
+     <div
+    class="modal fade"
+    id="modalId"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="modalTitleId"
+    aria-hidden="true"
+  > 
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container-fluid">
+            <img class="w-100 rounded-3" [src]="curentItem.image" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var modalId = document.getElementById("modalId");
+    modalId.addEventListener("show.bs.modal", function (event) {
+      let button = event.relatedTarget;
+      let recipient = button.getAttribute("data-bs-whatever");
+
+    });
+  </script>
+  </div>
+</div>

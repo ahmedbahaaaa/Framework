@@ -1,0 +1,15 @@
+.not {
+  background-color: #fffefc;
+  padding-top: 15%;
+  height: 100vh;
+}
+.not h1 {
+  background-color: rgb(13, 162, 162);
+  width: 80%;
+  margin-top: 20%;
+  padding: 15px;
+  border-radius: 15px;
+  margin-left: 10%;
+  color: #fffefc;
+  text-align: center;
+}

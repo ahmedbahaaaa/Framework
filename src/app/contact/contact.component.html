@@ -1,0 +1,81 @@
+<div>
+  <div class="pt-3 conatiner">
+    <div class="text-center pt-4">
+      <h2 class="text-uppercase mb-3 fs-1 fw-bolder">conatct section</h2>
+      <div class="d-flex align-items-center justify-content-center mb-3">
+        <div class="line me-3"></div>
+        <i class="fa-solid fa-star"></i>
+        <div class="line ms-3"></div>
+      </div>
+    </div>
+
+    <form class="mx-auto w-50 my-5">
+      <div>
+        <label
+          for="userName"
+          class="text-sec position-relative top-0 my-2"
+          [class.text-bot]="!userName"
+          >userName:</label
+        >
+        <input
+          type="text"
+          placeholder="userName"
+          name="userName"
+          [(ngModel)]="userName"
+          class="form-control my-2 border-end-0 border-start-0 border-top-0 rounded-0 shadow-none position-relative"
+        />
+      </div>
+
+      <div>
+        <label
+          for="userAge"
+          class="text-sec position-relative top-0 my-2"
+          [class.text-bot]="!userAge"
+          >userAge:</label
+        >
+        <input
+          type="number"
+          placeholder="userAge"
+          name="userAge"
+          [(ngModel)]="userAge"
+          class="form-control my-2 border-end-0 border-start-0 border-top-0 rounded-0 shadow-none position-relative"
+        />
+      </div>
+
+      <div>
+        <label
+          for="userEmail"
+          class="text-sec position-relative top-0 my-2"
+          [class.text-bot]="!userEmail"
+          >userEmail:</label
+        >
+        <input
+          type="email"
+          placeholder="userEmail"
+          name="userEmail"
+          [(ngModel)]="userEmail"
+          class="form-control my-2 border-end-0 border-start-0 border-top-0 rounded-0 shadow-none position-relative"
+        />
+      </div>
+      <div>
+        <label
+          for="userPassword"
+          class="text-sec position-relative top-0 my-2"
+          [class.text-bot]="!userPassword"
+          >userPassword:</label
+        >
+        <input
+          type="password"
+          placeholder="userPassword"
+          name="userPassword"
+          [(ngModel)]="userPassword"
+          class="form-control my-2 border-end-0 border-start-0 border-top-0 rounded-0 shadow-none position-relative"
+        />
+
+        <div>
+          <button class="btn text-white">send Message</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

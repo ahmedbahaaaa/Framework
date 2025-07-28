@@ -1,0 +1,40 @@
+.protfoilo{
+    background-color: #FFFFFF;
+    padding:100px ;
+}
+.cont-text{
+color: #2C3E50;
+margin-bottom: 50px;
+}
+
+.line{
+    border: #2C3E50 2px solid;
+    width: 10%;
+    
+}
+.layer{
+    transition: all 1s ease;
+}
+
+.modal-body ,.fade{
+    width: 100% ;
+    background-color: #00ffd52d;
+}
+.modal-body{
+    background-color:beige;
+    
+
+}
+.modal-body img{
+    width: 100%;
+    
+}
+.layer:hover{
+    background-color: #1aba9fb0;
+}
+.layer i{
+    display: none;
+}
+.layer:hover i{
+    display: block;
+}

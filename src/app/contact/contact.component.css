@@ -1,0 +1,25 @@
+.conatiner {
+  color: #2c3e50;
+}
+
+.conatiner h2 {
+  padding-top: 150px;
+}
+
+.line {
+  border: #2c3e50 solid 2px;
+  width: 10%;
+}
+
+.btn {
+  background-color: #1abc9c;
+  margin-top: 30px !important;
+}
+
+.text-sec {
+  color: #007bff;
+  transition: top 0.4s linear;
+}
+.text-bot {
+  top: 50px !important;
+}

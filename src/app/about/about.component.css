@@ -1,0 +1,12 @@
+.about{
+    background-color: #1ABC9C;
+    height: 97vh;
+    
+}
+.about h2{
+    padding-top: 90px;
+}
+.line{
+    width: 10%;
+    border: #fff solid 2px;
+}
